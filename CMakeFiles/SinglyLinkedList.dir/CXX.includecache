@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Work/singly_linked_list/SinglyLinkedListLibrary.cpp
-SinglyLinkedListLibrary.hpp
-/home/david/Work/singly_linked_list/SinglyLinkedListLibrary.hpp
+/home/david/Work/singly_linked_list/SinglyLinkedList.cpp
+SinglyLinkedList.hpp
+/home/david/Work/singly_linked_list/SinglyLinkedList.hpp
 iostream
 -
+
+/home/david/Work/singly_linked_list/SinglyLinkedList.hpp
+SinglyLinkedListLibrary.hpp
+/home/david/Work/singly_linked_list/SinglyLinkedListLibrary.hpp
 
 /home/david/Work/singly_linked_list/SinglyLinkedListLibrary.hpp
 array

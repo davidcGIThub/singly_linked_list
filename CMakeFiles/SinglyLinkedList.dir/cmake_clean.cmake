@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.o"
   "CMakeFiles/SinglyLinkedList.dir/SinglyLinkedListLibrary.cpp.o"
   "libSinglyLinkedList.a"
   "libSinglyLinkedList.pdb"

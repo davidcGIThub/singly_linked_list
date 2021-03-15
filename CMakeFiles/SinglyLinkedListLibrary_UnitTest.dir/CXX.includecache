@@ -6,17 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/david/Work/singly_linked_list/SinglyLinkedList.hpp
+SinglyLinkedListLibrary.hpp
+/home/david/Work/singly_linked_list/SinglyLinkedListLibrary.hpp
+
+/home/david/Work/singly_linked_list/SinglyLinkedListAcceptanceTest.cpp
+gtest/gtest.h
+/home/david/Work/singly_linked_list/gtest/gtest.h
+SinglyLinkedList.hpp
+/home/david/Work/singly_linked_list/SinglyLinkedList.hpp
+
 /home/david/Work/singly_linked_list/SinglyLinkedListLibrary.hpp
 array
 -
 string
--
-
-/home/david/Work/singly_linked_list/SinglyLinkedListLibraryAcceptanceTest.cpp
-gtest/gtest.h
-/home/david/Work/singly_linked_list/gtest/gtest.h
-SinglyLinkedListLibrary.hpp
-/home/david/Work/singly_linked_list/SinglyLinkedListLibrary.hpp
-exception
 -
 

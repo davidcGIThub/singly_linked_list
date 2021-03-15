@@ -136,6 +136,63 @@ SinglyLinkedList/fast:
 	$(MAKE) -f CMakeFiles/SinglyLinkedList.dir/build.make CMakeFiles/SinglyLinkedList.dir/build
 .PHONY : SinglyLinkedList/fast
 
+SinglyLinkedList.o: SinglyLinkedList.cpp.o
+
+.PHONY : SinglyLinkedList.o
+
+# target to build an object file
+SinglyLinkedList.cpp.o:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedList.cpp.o
+	$(MAKE) -f CMakeFiles/SinglyLinkedList.dir/build.make CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.o
+.PHONY : SinglyLinkedList.cpp.o
+
+SinglyLinkedList.i: SinglyLinkedList.cpp.i
+
+.PHONY : SinglyLinkedList.i
+
+# target to preprocess a source file
+SinglyLinkedList.cpp.i:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedList.cpp.i
+	$(MAKE) -f CMakeFiles/SinglyLinkedList.dir/build.make CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.i
+.PHONY : SinglyLinkedList.cpp.i
+
+SinglyLinkedList.s: SinglyLinkedList.cpp.s
+
+.PHONY : SinglyLinkedList.s
+
+# target to generate assembly for a file
+SinglyLinkedList.cpp.s:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedList.cpp.s
+	$(MAKE) -f CMakeFiles/SinglyLinkedList.dir/build.make CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.s
+.PHONY : SinglyLinkedList.cpp.s
+
+SinglyLinkedListAcceptanceTest.o: SinglyLinkedListAcceptanceTest.cpp.o
+
+.PHONY : SinglyLinkedListAcceptanceTest.o
+
+# target to build an object file
+SinglyLinkedListAcceptanceTest.cpp.o:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListAcceptanceTest.cpp.o
+.PHONY : SinglyLinkedListAcceptanceTest.cpp.o
+
+SinglyLinkedListAcceptanceTest.i: SinglyLinkedListAcceptanceTest.cpp.i
+
+.PHONY : SinglyLinkedListAcceptanceTest.i
+
+# target to preprocess a source file
+SinglyLinkedListAcceptanceTest.cpp.i:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListAcceptanceTest.cpp.i
+.PHONY : SinglyLinkedListAcceptanceTest.cpp.i
+
+SinglyLinkedListAcceptanceTest.s: SinglyLinkedListAcceptanceTest.cpp.s
+
+.PHONY : SinglyLinkedListAcceptanceTest.s
+
+# target to generate assembly for a file
+SinglyLinkedListAcceptanceTest.cpp.s:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListAcceptanceTest.cpp.s
+.PHONY : SinglyLinkedListAcceptanceTest.cpp.s
+
 SinglyLinkedListLibrary.o: SinglyLinkedListLibrary.cpp.o
 
 .PHONY : SinglyLinkedListLibrary.o
@@ -203,6 +260,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... SinglyLinkedListLibrary_UnitTest"
 	@echo "... SinglyLinkedList"
+	@echo "... SinglyLinkedList.o"
+	@echo "... SinglyLinkedList.i"
+	@echo "... SinglyLinkedList.s"
+	@echo "... SinglyLinkedListAcceptanceTest.o"
+	@echo "... SinglyLinkedListAcceptanceTest.i"
+	@echo "... SinglyLinkedListAcceptanceTest.s"
 	@echo "... SinglyLinkedListLibrary.o"
 	@echo "... SinglyLinkedListLibrary.i"
 	@echo "... SinglyLinkedListLibrary.s"
