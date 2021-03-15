@@ -1,0 +1,12 @@
+Case 1:
+Add 1
+Add 2
+Add 3
+Remove 2
+
+Case 2:
+Add 4
+Add 8
+Add -2
+Remove 8
+Add -1

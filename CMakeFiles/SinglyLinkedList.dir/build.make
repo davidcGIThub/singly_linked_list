@@ -83,19 +83,34 @@ CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/Work/singly_linked_list/SinglyLinkedList.cpp -o CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.s
 
+CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.o: CMakeFiles/SinglyLinkedList.dir/flags.make
+CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.o: LinkedListFileParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.o -c /home/david/Work/singly_linked_list/LinkedListFileParser.cpp
+
+CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/Work/singly_linked_list/LinkedListFileParser.cpp > CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.i
+
+CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/Work/singly_linked_list/LinkedListFileParser.cpp -o CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.s
+
 # Object files for target SinglyLinkedList
 SinglyLinkedList_OBJECTS = \
 "CMakeFiles/SinglyLinkedList.dir/SinglyLinkedListLibrary.cpp.o" \
-"CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.o"
+"CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.o" \
+"CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.o"
 
 # External object files for target SinglyLinkedList
 SinglyLinkedList_EXTERNAL_OBJECTS =
 
 libSinglyLinkedList.a: CMakeFiles/SinglyLinkedList.dir/SinglyLinkedListLibrary.cpp.o
 libSinglyLinkedList.a: CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.o
+libSinglyLinkedList.a: CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.o
 libSinglyLinkedList.a: CMakeFiles/SinglyLinkedList.dir/build.make
 libSinglyLinkedList.a: CMakeFiles/SinglyLinkedList.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libSinglyLinkedList.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libSinglyLinkedList.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/SinglyLinkedList.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SinglyLinkedList.dir/link.txt --verbose=$(VERBOSE)
 

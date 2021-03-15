@@ -109,12 +109,40 @@ CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListAcceptanceTest.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListAcceptanceTest.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/Work/singly_linked_list/SinglyLinkedListAcceptanceTest.cpp -o CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListAcceptanceTest.cpp.s
 
+CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.o: CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/flags.make
+CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.o: LinkedListFileParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.o -c /home/david/Work/singly_linked_list/LinkedListFileParser.cpp
+
+CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/Work/singly_linked_list/LinkedListFileParser.cpp > CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.i
+
+CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/Work/singly_linked_list/LinkedListFileParser.cpp -o CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.s
+
+CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.o: CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/flags.make
+CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.o: LinkedListFileParserAcceptanceTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.o -c /home/david/Work/singly_linked_list/LinkedListFileParserAcceptanceTest.cpp
+
+CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/Work/singly_linked_list/LinkedListFileParserAcceptanceTest.cpp > CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.i
+
+CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/Work/singly_linked_list/LinkedListFileParserAcceptanceTest.cpp -o CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.s
+
 # Object files for target SinglyLinkedListLibrary_UnitTest
 SinglyLinkedListLibrary_UnitTest_OBJECTS = \
 "CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListLibrary.cpp.o" \
 "CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedList.cpp.o" \
 "CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListLibraryAcceptanceTest.cpp.o" \
-"CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListAcceptanceTest.cpp.o"
+"CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListAcceptanceTest.cpp.o" \
+"CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.o" \
+"CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.o"
 
 # External object files for target SinglyLinkedListLibrary_UnitTest
 SinglyLinkedListLibrary_UnitTest_EXTERNAL_OBJECTS =
@@ -123,12 +151,14 @@ SinglyLinkedListLibrary_UnitTest: CMakeFiles/SinglyLinkedListLibrary_UnitTest.di
 SinglyLinkedListLibrary_UnitTest: CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedList.cpp.o
 SinglyLinkedListLibrary_UnitTest: CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListLibraryAcceptanceTest.cpp.o
 SinglyLinkedListLibrary_UnitTest: CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListAcceptanceTest.cpp.o
+SinglyLinkedListLibrary_UnitTest: CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.o
+SinglyLinkedListLibrary_UnitTest: CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.o
 SinglyLinkedListLibrary_UnitTest: CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make
 SinglyLinkedListLibrary_UnitTest: /usr/lib/x86_64-linux-gnu/libgtest.a
 SinglyLinkedListLibrary_UnitTest: /usr/lib/x86_64-linux-gnu/libgtest_main.a
 SinglyLinkedListLibrary_UnitTest: libSinglyLinkedList.a
 SinglyLinkedListLibrary_UnitTest: CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SinglyLinkedListLibrary_UnitTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable SinglyLinkedListLibrary_UnitTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -76,12 +76,12 @@ clean: CMakeFiles/SinglyLinkedList.dir/clean
 CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/all: CMakeFiles/SinglyLinkedList.dir/all
 	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/depend
 	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=4,5,6,7,8 "Built target SinglyLinkedListLibrary_UnitTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=5,6,7,8,9,10,11 "Built target SinglyLinkedListLibrary_UnitTest"
 .PHONY : CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Work/singly_linked_list/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Work/singly_linked_list/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Work/singly_linked_list/CMakeFiles 0
 .PHONY : CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/rule
@@ -103,12 +103,12 @@ CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/clean:
 CMakeFiles/SinglyLinkedList.dir/all:
 	$(MAKE) -f CMakeFiles/SinglyLinkedList.dir/build.make CMakeFiles/SinglyLinkedList.dir/depend
 	$(MAKE) -f CMakeFiles/SinglyLinkedList.dir/build.make CMakeFiles/SinglyLinkedList.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=1,2,3 "Built target SinglyLinkedList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/Work/singly_linked_list/CMakeFiles --progress-num=1,2,3,4 "Built target SinglyLinkedList"
 .PHONY : CMakeFiles/SinglyLinkedList.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SinglyLinkedList.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Work/singly_linked_list/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Work/singly_linked_list/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SinglyLinkedList.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Work/singly_linked_list/CMakeFiles 0
 .PHONY : CMakeFiles/SinglyLinkedList.dir/rule

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.o"
+  "CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.o"
   "CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedList.cpp.o"
   "CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListAcceptanceTest.cpp.o"
   "CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/SinglyLinkedListLibrary.cpp.o"

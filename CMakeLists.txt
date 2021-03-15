@@ -18,6 +18,8 @@ add_library(${PROJECT_NAME} STATIC
     SinglyLinkedListLibrary.cpp
     SinglyLinkedList.hpp
     SinglyLinkedList.cpp 
+    LinkedListFileParser.cpp
+    LinkedListFileParser.hpp
 )
 
 # add test executables
@@ -29,6 +31,9 @@ add_executable(${TEST_NAME}
     SinglyLinkedList.cpp 
     SinglyLinkedListLibraryAcceptanceTest.cpp
     SinglyLinkedListAcceptanceTest.cpp
+    LinkedListFileParser.hpp
+    LinkedListFileParser.cpp
+    LinkedListFileParserAcceptanceTest.cpp
 )
 
 target_link_libraries(${TEST_NAME} ${GTEST_LIBRARIES} pthread ${GTEST_MAIN_LIBRARIES} ${PROJECT_NAME})

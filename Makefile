@@ -136,6 +136,63 @@ SinglyLinkedList/fast:
 	$(MAKE) -f CMakeFiles/SinglyLinkedList.dir/build.make CMakeFiles/SinglyLinkedList.dir/build
 .PHONY : SinglyLinkedList/fast
 
+LinkedListFileParser.o: LinkedListFileParser.cpp.o
+
+.PHONY : LinkedListFileParser.o
+
+# target to build an object file
+LinkedListFileParser.cpp.o:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.o
+	$(MAKE) -f CMakeFiles/SinglyLinkedList.dir/build.make CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.o
+.PHONY : LinkedListFileParser.cpp.o
+
+LinkedListFileParser.i: LinkedListFileParser.cpp.i
+
+.PHONY : LinkedListFileParser.i
+
+# target to preprocess a source file
+LinkedListFileParser.cpp.i:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.i
+	$(MAKE) -f CMakeFiles/SinglyLinkedList.dir/build.make CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.i
+.PHONY : LinkedListFileParser.cpp.i
+
+LinkedListFileParser.s: LinkedListFileParser.cpp.s
+
+.PHONY : LinkedListFileParser.s
+
+# target to generate assembly for a file
+LinkedListFileParser.cpp.s:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParser.cpp.s
+	$(MAKE) -f CMakeFiles/SinglyLinkedList.dir/build.make CMakeFiles/SinglyLinkedList.dir/LinkedListFileParser.cpp.s
+.PHONY : LinkedListFileParser.cpp.s
+
+LinkedListFileParserAcceptanceTest.o: LinkedListFileParserAcceptanceTest.cpp.o
+
+.PHONY : LinkedListFileParserAcceptanceTest.o
+
+# target to build an object file
+LinkedListFileParserAcceptanceTest.cpp.o:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.o
+.PHONY : LinkedListFileParserAcceptanceTest.cpp.o
+
+LinkedListFileParserAcceptanceTest.i: LinkedListFileParserAcceptanceTest.cpp.i
+
+.PHONY : LinkedListFileParserAcceptanceTest.i
+
+# target to preprocess a source file
+LinkedListFileParserAcceptanceTest.cpp.i:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.i
+.PHONY : LinkedListFileParserAcceptanceTest.cpp.i
+
+LinkedListFileParserAcceptanceTest.s: LinkedListFileParserAcceptanceTest.cpp.s
+
+.PHONY : LinkedListFileParserAcceptanceTest.s
+
+# target to generate assembly for a file
+LinkedListFileParserAcceptanceTest.cpp.s:
+	$(MAKE) -f CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/build.make CMakeFiles/SinglyLinkedListLibrary_UnitTest.dir/LinkedListFileParserAcceptanceTest.cpp.s
+.PHONY : LinkedListFileParserAcceptanceTest.cpp.s
+
 SinglyLinkedList.o: SinglyLinkedList.cpp.o
 
 .PHONY : SinglyLinkedList.o
@@ -260,6 +317,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... SinglyLinkedListLibrary_UnitTest"
 	@echo "... SinglyLinkedList"
+	@echo "... LinkedListFileParser.o"
+	@echo "... LinkedListFileParser.i"
+	@echo "... LinkedListFileParser.s"
+	@echo "... LinkedListFileParserAcceptanceTest.o"
+	@echo "... LinkedListFileParserAcceptanceTest.i"
+	@echo "... LinkedListFileParserAcceptanceTest.s"
 	@echo "... SinglyLinkedList.o"
 	@echo "... SinglyLinkedList.i"
 	@echo "... SinglyLinkedList.s"
