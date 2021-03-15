@@ -16,7 +16,7 @@ class LinkedListFileParser
         SinglyLinkedList currentLinkedList;
         bool firstListFlag;
         void parseInputFile();
-        void updateOutputFile(std::string command, std::string input);
+        void updateOutputFile(std::string command, std::string input, bool endOfFileReached);
 
     public:
         LinkedListFileParser();

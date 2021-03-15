@@ -10,3 +10,5 @@ Add 8
 Add -2
 Remove 8
 Add -1
+
+Case 3:

@@ -23,23 +23,25 @@ void LinkedListFileParser::parseInputFile()
     std::string secondWordInLine;
     if (inputFileStream.is_open())
     {
-        while ( !inputFileStream.eof() )
+        bool endOfFileReached = false;
+        while ( getline(inputFileStream,lineInFile) || !endOfFileReached )
         {
-            getline(inputFileStream,lineInFile);
+            if(inputFileStream.eof())
+            {
+                endOfFileReached = true;
+            }
             std::istringstream lineStream(lineInFile);
             lineStream >> firstWordInLine;
             lineStream >> secondWordInLine;
-            this->updateOutputFile(firstWordInLine, secondWordInLine);
-            // if(inputFileStream.eof())
-            //      break;
+            this->updateOutputFile(firstWordInLine, secondWordInLine, endOfFileReached);
         }
         inputFileStream.close();
     }   
 }
 
-void LinkedListFileParser::updateOutputFile(std::string command, std::string input)
+void LinkedListFileParser::updateOutputFile(std::string command, std::string input, bool endOfFileReached)
 {
-    if(command == "Case")
+    if(command == "Case" || endOfFileReached)
     {
         if (firstListFlag)
         {
