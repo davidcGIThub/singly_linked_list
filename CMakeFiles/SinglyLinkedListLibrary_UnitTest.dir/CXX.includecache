@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Work/singly_linked_list/LinkedListFileParser.cpp
-LinkedListFileParser.hpp
-/home/david/Work/singly_linked_list/LinkedListFileParser.hpp
-
 /home/david/Work/singly_linked_list/LinkedListFileParser.hpp
 SinglyLinkedList.hpp
 /home/david/Work/singly_linked_list/SinglyLinkedList.hpp
@@ -21,6 +17,12 @@ sstream
 -
 string
 -
+
+/home/david/Work/singly_linked_list/LinkedListFileParserAcceptanceTest.cpp
+gtest/gtest.h
+/home/david/Work/singly_linked_list/gtest/gtest.h
+LinkedListFileParser.hpp
+/home/david/Work/singly_linked_list/LinkedListFileParser.hpp
 
 /home/david/Work/singly_linked_list/SinglyLinkedList.hpp
 SinglyLinkedListLibrary.hpp

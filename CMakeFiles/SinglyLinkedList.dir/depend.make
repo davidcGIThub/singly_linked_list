@@ -13,3 +13,8 @@ CMakeFiles/SinglyLinkedList.dir/SinglyLinkedList.cpp.o: SinglyLinkedListLibrary.
 CMakeFiles/SinglyLinkedList.dir/SinglyLinkedListLibrary.cpp.o: SinglyLinkedListLibrary.cpp
 CMakeFiles/SinglyLinkedList.dir/SinglyLinkedListLibrary.cpp.o: SinglyLinkedListLibrary.hpp
 
+CMakeFiles/SinglyLinkedList.dir/main.cpp.o: LinkedListFileParser.hpp
+CMakeFiles/SinglyLinkedList.dir/main.cpp.o: SinglyLinkedList.hpp
+CMakeFiles/SinglyLinkedList.dir/main.cpp.o: SinglyLinkedListLibrary.hpp
+CMakeFiles/SinglyLinkedList.dir/main.cpp.o: main.cpp
+

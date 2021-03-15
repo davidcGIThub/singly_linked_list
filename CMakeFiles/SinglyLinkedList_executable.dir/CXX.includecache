@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/david/Work/singly_linked_list/LinkedListFileParser.hpp
+SinglyLinkedList.hpp
+/home/david/Work/singly_linked_list/SinglyLinkedList.hpp
+iostream
+-
+fstream
+-
+sstream
+-
+string
+-
+
+/home/david/Work/singly_linked_list/SinglyLinkedList.hpp
+SinglyLinkedListLibrary.hpp
+/home/david/Work/singly_linked_list/SinglyLinkedListLibrary.hpp
+
+/home/david/Work/singly_linked_list/SinglyLinkedListLibrary.hpp
+array
+-
+string
+-
+
+/home/david/Work/singly_linked_list/main.cpp
+LinkedListFileParser.hpp
+/home/david/Work/singly_linked_list/LinkedListFileParser.hpp
+iostream
+-
+
