@@ -23,8 +23,10 @@ set(TEST_NAME ${PROJECT_NAME}Library_UnitTest)
 add_executable(${TEST_NAME}
     SinglyLinkedListLibrary.hpp
     SinglyLinkedListLibrary.cpp
-    LinkedListLibraryAcceptanceTest.cpp
+    SinglyLinkedListLibraryAcceptanceTest.cpp
 )
+
+target_link_libraries(${TEST_NAME} ${GTEST_LIBRARIES} pthread ${GTEST_MAIN_LIBRARIES} ${PROJECT_NAME})
 
 # add executable
 # add_executable(Singly_Linked_List)

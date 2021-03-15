@@ -2,12 +2,10 @@
 #include "SinglyLinkedListLibrary.hpp"
 #include <exception>
 
-class SinglyLinkedListAccpetanceTest : public ::testing:Test 
+class SinglyLinkedListAcceptanceTest : public ::testing::Test 
 {
     protected:
 
-    SinglyLinkedListAcceptanceTest()
-    {
         //linked list 1 (empty)
         SinglyLinkedListLibrary::LinkedListNode *list1Head{nullptr};
         
@@ -19,30 +17,24 @@ class SinglyLinkedListAccpetanceTest : public ::testing:Test
         SinglyLinkedListLibrary::LinkedListNode *list2Head{&list2FirstNode};
 
         //linked list 3 (size two)
-        int list3SecondNodeValue{-3};
+        int list3SecondNodeValue{45};
         SinglyLinkedListLibrary::LinkedListNode *list3SecondNodePointer{nullptr};
         SinglyLinkedListLibrary::LinkedListNode list3SecondNode{list3SecondNodeValue, list3SecondNodePointer};
         
-        int list3FirstNodeValue{45};
+        int list3FirstNodeValue{-3};
         SinglyLinkedListLibrary::LinkedListNode *list3FirstNodePointer{&list3SecondNode};
         SinglyLinkedListLibrary::LinkedListNode list3FirstNode{list3FirstNodeValue, list3FirstNodePointer};
 
         SinglyLinkedListLibrary::LinkedListNode *list3Head{&list3FirstNode};
-    }
 
-    ~FooTest() override 
-    {
-        delete list1Head;
+        ~SinglyLinkedListAcceptanceTest() override
+        {
+            delete list1Head;
+            delete list2Head->pointer;
+            delete list3Head->pointer->pointer;
+        }
 
-        delete list2Head->pointer;
-        delete list2Head;
-
-        delete list3Head->pointer->pointer;
-        delete list3Head->pointer;
-        delete list3Head;
-    }
-
-}   
+};   
 
 TEST_F(SinglyLinkedListAcceptanceTest, CreateEmptyLinkedList)
 {
@@ -92,7 +84,7 @@ TEST_F(SinglyLinkedListAcceptanceTest, RemoveItemFromEmptyList)
         int item{3};
         SinglyLinkedListLibrary::remove_item_from_list(list1Head,item);
     }
-    catch (exception& e)
+    catch (std::exception& e)
     {
         EXPECT_EQ("No Errors", "Error in removing item from empty list");
     }
@@ -129,7 +121,7 @@ TEST_F(SinglyLinkedListAcceptanceTest, RemoveItemFromListWhereItemIsNotFound)
         SinglyLinkedListLibrary::remove_item_from_list(list3Head,item);
         EXPECT_EQ(list3Head->pointer->pointer, nullptr);
     }
-    catch (exception& e)
+    catch (std::exception& e)
     {
         EXPECT_EQ("No Errors", "Error in removing item from list when item not found");
     }
@@ -140,7 +132,7 @@ TEST_F(SinglyLinkedListAcceptanceTest, RemoveItemWithDuplicates)
     int list3ThirdNodeValue{-3};
     SinglyLinkedListLibrary::LinkedListNode *list3ThirdNodePointer{nullptr};
     SinglyLinkedListLibrary::LinkedListNode list3ThirdNode{list3ThirdNodeValue,list3ThirdNodePointer};
-    list3SecondNode->pointer = &list3ThirdNode;
+    list3SecondNode.pointer = &list3ThirdNode;
 
     int item{-3};
     SinglyLinkedListLibrary::remove_item_from_list(list3Head,item);
