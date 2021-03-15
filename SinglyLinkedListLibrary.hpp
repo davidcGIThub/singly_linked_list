@@ -16,6 +16,8 @@ namespace SinglyLinkedListLibrary
     void remove_item_from_list(LinkedListNode *&head, int item);
 
     std::string convert_linked_list_to_string(LinkedListNode *&head);
+
+    void clear_linked_list(LinkedListNode *&head);
 }
 
 #endif

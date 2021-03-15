@@ -11,28 +11,13 @@ class SinglyLinkedListAcceptanceTest : public ::testing::Test
         
         //linked list 2 (size one)
         int list2FirstNodeValue{2};
-        SinglyLinkedListLibrary::LinkedListNode *list2FirstNodePointer{nullptr};
-        SinglyLinkedListLibrary::LinkedListNode list2FirstNode{list2FirstNodeValue, list2FirstNodePointer};
-
-        SinglyLinkedListLibrary::LinkedListNode *list2Head{&list2FirstNode};
+        SinglyLinkedListLibrary::LinkedListNode *list2Head = new SinglyLinkedListLibrary::LinkedListNode{list2FirstNodeValue,nullptr};
 
         //linked list 3 (size two)
-        int list3SecondNodeValue{45};
-        SinglyLinkedListLibrary::LinkedListNode *list3SecondNodePointer{nullptr};
-        SinglyLinkedListLibrary::LinkedListNode list3SecondNode{list3SecondNodeValue, list3SecondNodePointer};
-        
         int list3FirstNodeValue{-3};
-        SinglyLinkedListLibrary::LinkedListNode *list3FirstNodePointer{&list3SecondNode};
-        SinglyLinkedListLibrary::LinkedListNode list3FirstNode{list3FirstNodeValue, list3FirstNodePointer};
-
-        SinglyLinkedListLibrary::LinkedListNode *list3Head{&list3FirstNode};
-
-        ~SinglyLinkedListAcceptanceTest() override
-        {
-            delete list1Head;
-            delete list2Head->pointer;
-            delete list3Head->pointer->pointer;
-        }
+        int list3SecondNodeValue{45};
+        SinglyLinkedListLibrary::LinkedListNode *list3FirstNodePointer = new SinglyLinkedListLibrary::LinkedListNode{list3SecondNodeValue,nullptr};
+        SinglyLinkedListLibrary::LinkedListNode *list3Head = new SinglyLinkedListLibrary::LinkedListNode{list3FirstNodeValue,list3FirstNodePointer};
 
 };   
 
@@ -47,7 +32,6 @@ TEST_F(SinglyLinkedListAcceptanceTest, CreateNonEmptyLinkedList)
     EXPECT_EQ(list2Head->pointer, nullptr);
 
     EXPECT_EQ(list3Head->value, -3);
-    EXPECT_EQ(list3Head->pointer, &list3SecondNode);
     EXPECT_EQ(list3Head->pointer->value, 45);
     EXPECT_EQ(list3Head->pointer->pointer, nullptr);
 }
@@ -130,12 +114,22 @@ TEST_F(SinglyLinkedListAcceptanceTest, RemoveItemFromListWhereItemIsNotFound)
 TEST_F(SinglyLinkedListAcceptanceTest, RemoveItemWithDuplicates)
 {
     int list3ThirdNodeValue{-3};
-    SinglyLinkedListLibrary::LinkedListNode *list3ThirdNodePointer{nullptr};
-    SinglyLinkedListLibrary::LinkedListNode list3ThirdNode{list3ThirdNodeValue,list3ThirdNodePointer};
-    list3SecondNode.pointer = &list3ThirdNode;
+    list3Head->pointer->pointer = new SinglyLinkedListLibrary::LinkedListNode{list3ThirdNodeValue,nullptr};
 
     int item{-3};
     SinglyLinkedListLibrary::remove_item_from_list(list3Head,item);
     EXPECT_EQ(list3Head->value, 45);
     EXPECT_EQ(list3Head->pointer, nullptr);
+}
+
+TEST_F(SinglyLinkedListAcceptanceTest, ClearFullLinkedList)
+{
+    SinglyLinkedListLibrary::clear_linked_list(list3Head);
+    EXPECT_EQ(list3Head,nullptr);
+}
+
+TEST_F(SinglyLinkedListAcceptanceTest, ClearEmptyLinkedList)
+{
+    SinglyLinkedListLibrary::clear_linked_list(list1Head);
+    EXPECT_EQ(list1Head,nullptr);
 }

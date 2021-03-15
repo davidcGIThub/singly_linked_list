@@ -50,7 +50,7 @@ namespace SinglyLinkedListLibrary
         {
             LinkedListNode *currentNodePointer{head};
             LinkedListNode *nextNodePointer{head->pointer};
-            do
+            while(nextNodePointer != nullptr)
             {
                 if(nextNodePointer->value == item)
                 {
@@ -64,7 +64,6 @@ namespace SinglyLinkedListLibrary
                     currentNodePointer = currentNodePointer->pointer;
                 }
             }
-            while(nextNodePointer != nullptr);
 
             if(head->value == item)
             {
@@ -72,6 +71,32 @@ namespace SinglyLinkedListLibrary
                 nextNodePointer = head->pointer;
                 head = nextNodePointer;
                 delete currentNodePointer;
+            }
+        }
+    }
+
+    void clear_linked_list(LinkedListNode *&head)
+    {
+        if(head != nullptr)
+        {
+            if(head->pointer == nullptr)
+            {
+                delete head;
+                head = nullptr;
+            }
+            else
+            {
+                LinkedListNode *currentNodePointer{head};
+                LinkedListNode *nextNodePointer{head->pointer};
+                do
+                {
+                    delete currentNodePointer;
+                    currentNodePointer = nextNodePointer;
+                    nextNodePointer = nextNodePointer->pointer;
+                }
+                while(nextNodePointer != nullptr);
+                delete currentNodePointer;
+                head = nullptr;
             }
         }
     }
