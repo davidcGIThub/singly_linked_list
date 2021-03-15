@@ -7,18 +7,18 @@
 #IncludeRegexTransform: 
 
 /home/david/Work/singly_linked_list/LinkedListFileParser.cpp
-iostream
--
-fstream
--
-string
--
 LinkedListFileParser.hpp
 /home/david/Work/singly_linked_list/LinkedListFileParser.hpp
 
 /home/david/Work/singly_linked_list/LinkedListFileParser.hpp
 SinglyLinkedList.hpp
 /home/david/Work/singly_linked_list/SinglyLinkedList.hpp
+iostream
+-
+fstream
+-
+sstream
+-
 string
 -
 

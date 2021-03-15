@@ -5,14 +5,14 @@ class LinkedListFileParserAcceptanceTest : public ::testing::Test
 {
     protected:
         LinkedListFileParser fileParser;
-        std::string inputFile "testInputFile.txt";
-        std::string outputFile "testOutputFile.txt";
+        std::string inputFile{"testInputFile.txt"};
+        std::string outputFile{"testOutputFile.txt"};
 
 };   
 
 TEST_F(LinkedListFileParserAcceptanceTest, AcceptInputFile)
 {
-    fileParser.getListsFromInputFile(inputFile);
+    fileParser.generateListFileFromInputFile(inputFile, outputFile);
     // fileParser.getCurrentListAsString()
     // std::string expectedString = "Case 1:\n[1,3]\n\n" + "Case 2:\n[4,-2,1]";
     // EXPECT_EQ(expectedString, fileParser.getCurrentListAsString());

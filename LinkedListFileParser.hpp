@@ -2,23 +2,26 @@
 #define LINKEDLISTFILEPARSER_HPP
 
 #include "SinglyLinkedList.hpp"
+#include <iostream>
+#include <fstream>
+#include <sstream>
 #include <string>
 
 class LinkedListFileParser
 {
     private:
-        SinglyLinkedList listOfLinkedLists;
+        std::string currentInputFile;
+        std::ofstream currentOutputFileStream;
+        std::string currentCase;
+        SinglyLinkedList currentLinkedList;
+        bool firstListFlag;
+        void parseInputFile();
+        void updateOutputFile(std::string command, std::string input);
 
     public:
         LinkedListFileParser();
 
-        ~LinkedListFileParser();
-
-        void getListsFromInputFile(std::string inputFilePath);
-
-        void createOutputFileFromLists(std::string outputFilePath);
-
-        void clearListOfLinkedLists();
+        void generateListFileFromInputFile(std::string inputFile, std::string outputFile);
 
 };
 #endif
